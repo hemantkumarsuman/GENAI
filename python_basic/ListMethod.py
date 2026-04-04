@@ -54,3 +54,24 @@ print("Length of the list:", length) # 5
 
 
 # List comprehension -> it is a concise way to create a list
+# Syntax -> [expression for item in iterable if condition]
+# expression -> it is the value that we want to store in the list
+# item -> it is the variable that takes the value of the iterable
+# iterable -> it is the collection of items that we want to iterate over
+# condition -> it is the optional part that filters the items based on a condition
+
+# I need to store value from 1 to 10 in a list
+list_items = [x for x in range(1, 11)]
+print(list_items) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+list_squared = [x**2 for x in list_items]
+print(list_squared) # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# I need to store only even squared numbers from 1 to 10 in a list
+list_even_squared = [x**2 for x in list_items if x%2==0]
+print(list_even_squared) # [4, 16, 36, 64, 100]
+
+# function in list comprehension
+list_str = ["apple", "banana", "grapes", "orange", "pineapple ", "watermelon"]
+list_length = [len(item) for item in list_str]
+print(list_length) # [5, 6, 6, 6, 9, 10]
