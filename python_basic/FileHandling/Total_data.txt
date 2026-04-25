@@ -1,0 +1,4 @@
+hello this is hemant
+I am learning python file handling
+I want to switch career to GEN engineer
+Python is pre requisite
